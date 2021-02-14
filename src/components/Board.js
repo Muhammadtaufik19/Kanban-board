@@ -17,7 +17,7 @@ const Board = ({ data }) => {
       {data.cards.map((card, index) => (
         <Card key={card.id} item={card} id={data.id} index={index} />
       ))}
-      <Button />
+      <Button id={data.id} />
     </div>
   );
 };
